@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Productos - Schuh</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,700&display=swap" rel="stylesheet">
+	<style>
+		body{
+			font-family: 'Montserrat', sans-serif;
+			margin: 0;
+			position: relative;
+			height: 100vh;
+		}
+		a:hover{
+			transition: width 1s, height 1s, transform 1s;
+			transform: scale(1.1);
+			font-weight: 500;
+		}
+		a:not(:hover){
+			transition: width 1s, height 1s, transform 1s;
+			transform: scale(1);
+		}
+		header{
+			display: flex;
+			width: 100vw;
+			height: 40px;
+			background: linear-gradient(90deg, rgba(164,186,183,1) 0%, rgba(210, 215, 223,1) 29%, rgba(215, 208, 217,1) 100%);
+			align-items: center;
+			justify-content: center;
+			position: absoulute;
+			top: 0;
+		}
+		.menuNavbar{
+			color: #0000019c;
+			text-decoration: none;
+			font-size: 25px;
+			margin: 0 10px;
+			font-weight: 700;
+		}
+		.navbarInicio{
+			font-weight: 500;
+		}
+
+
+
+		main{
+			width: 100vw;
+			height: calc(100vh - 80px);
+			position: absolute;
+			top: 40px;
+			}
+		
+
+		.productos{
+			background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 29%, rgba(255,249,249,1) 100%);
+			height: 839px;
+			padding: 20px;
+			display: grid;
+			grid-template-columns: auto auto auto;
+		}
+		/*--.producto{
+			width: 250px;
+			background-color: white;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			border-radius: 10px;
+			box-shadow: 1px 1px 12px 1px white;
+			margin: 20px;
+		}
+		.producto:hover{
+			transition: width 1s, height 1s, transform 1s;
+			transform: scale(1.05);
+			box-shadow: 1px 1px 12px 1px black;
+		}
+		.producto:not(:hover){
+			transition: width 1s, height 1s, transform 1s;
+			transform: scale(1);
+			box-shadow: 1px 1px 12px 1px white;
+		}
+		.figuraProducto img{
+			width: 200px;
+		}
+		.tituloProducto{
+			font-size: 13px;
+			font-weight: 700;
+		}
+		.precioProducto{
+			font-size: 14px;
+		}
+		.descripcionProducto{
+			font-size: 11px;
+		}*/
+
+
+		footer{
+			display: flex;
+			width: 100vw;
+			height: 40px;
+			background: linear-gradient(90deg, rgba(164,186,183,1) 0%, rgba(239, 242, 192,1) 29%, rgba(190, 165, 125,1) 100%);
+			align-items: center;
+			justify-content: center;
+			position: fixed;
+			bottom: 0;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<navbar>
+			<a href="./inicio.html" class="menuNavbar navbarInicio">Inicio</a>
+			<a href="./productos.html" class="menuNavbar navbarProductos">Productos</a>
+			<a href="./nosotros.html" class="menuNavbar navbarNosotros">Nosotros</a>
+		</navbar>
+	</header>
+	<main>
+		<section class="productos">
+			
+			
+		</section>
+	</main>
+	<footer>
+		<a href="" class="menuNavbar navbarContactenos">Contáctenos</a>
+	</footer>
+</body>
+</html>
