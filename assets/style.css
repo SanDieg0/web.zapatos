@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/*------------------------------------------------------------*/
+header{
+	display: flex;
+	width: 100vw;
+	height: 40px;
+	background: linear-gradient(90deg, rgba(164,186,183,1) 0%, rgba(210, 215, 223,1) 29%, rgba(215, 208, 217,1) 100%);
+	align-items: center;
+	justify-content: center;
+}
+a:hover{
+	transition: width 1s, height 1s, transform 1s;
+	transform: scale(1.1);
+	font-weight: 500;
+}
+a:not(:hover){
+	transition: width 1s, height 1s, transform 1s;
+	transform: scale(1);
+}
+.menuNavbar{
+	color: #0000019c;
+	text-decoration: none;
+	font-size: 25px;
+	margin: 0 10px;
+	font-weight: 700;
+}
+
+					/*  ESTA PARTE ES DE INDEX    */
+.navbarInicioX{
+	font-weight: 500;
+}
+					/*  ESTA PARTE ES DE PRODUCTOS    */
+.navbarProductosX{
+	font-weight: 500;
+}
+					/*  ESTA PARTE ES DE NOSOTROS    */
+.navbarNosotrosX{
+	font-weight: 500;
+}
+
+/*------------------------------------------------------------*/
+
+main{
+	width: 100vw;
+	height: calc(100vh - 80px);
+	}
+
+	
+					/*  ESTA PARTE ES DE PRODUCTOS    */
+.productos{
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 29%, rgba(255,249,249,1) 100%);
+	height: 839px;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+.producto{
+	width: 250px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	box-shadow: 1px 1px 12px 1px white;
+	margin: 20px;
+}
+.producto:hover{
+	transition: width 1s, height 1s, transform 1s;
+	transform: scale(1.05);
+	box-shadow: 1px 1px 12px 1px black;
+}
+.producto:not(:hover){
+	transition: width 1s, height 1s, transform 1s;
+	transform: scale(1);
+	box-shadow: 1px 1px 12px 1px white;
+}
+.figuraProducto img{
+	width: 200px;
+}
+.tituloProducto{
+	font-size: 13px;
+	font-weight: 700;
+}
+.precioProducto{
+	font-size: 14px;
+}
+.descripcionProducto{
+	font-size: 11px;
+}
+
+		
+					/*  ESTA PARTE ES DE NOSOTROS    */
+.cuerpo{
+	padding: 0 20px;
+}
+.figureNosotros{
+	margin: 20px auto;
+}
+.figureNosotros img{
+	width: 100%;
+}
+.cuerpo p{
+	margin-top: 20px;
+}
+
+/*------------------------------------------------------------*/
+
+footer{
+	display: flex;
+	width: 100vw;
+	height: 40px;
+	background: linear-gradient(90deg, rgba(164,186,183,1) 0%, rgba(239, 242, 192,1) 29%, rgba(190, 165, 125,1) 100%);
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+}
