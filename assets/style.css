@@ -223,10 +223,18 @@ main{
 
 footer{
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: right;
 	width: 100%;
 	/*background: linear-gradient(90deg, rgba(164,186,183,1) 0%, rgba(239, 242, 192,1) 29%, rgba(190, 165, 125,1) 100%);
 	*/padding: 0 30px;
 	height: 100%;
+	margin-top: 10px;
+}
+footer div{
+	border: 2px solid #0000019c;
+	border-radius: 5px;
+	width: 100px;
+	display: block;
 }
