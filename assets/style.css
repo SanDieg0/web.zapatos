@@ -23,6 +23,8 @@ header{
 	background: linear-gradient(90deg, rgba(164,186,183,1) 0%, rgba(210, 215, 223,1) 29%, rgba(215, 208, 217,1) 100%);
 	align-items: center;
 	justify-content: center;
+	position: sticky;
+	top: 0;
 }
 a:hover{
 	transition: width 1s, height 1s, transform 1s;
@@ -74,7 +76,7 @@ main{
 	grid-gap: 20px;
 	justify-content: center;
 
-	margin-left: 90px;
+	margin: 50px auto 50px 180px;
 }
 .producto{
 	width: 250px;
@@ -86,8 +88,10 @@ main{
 	border-radius: 10px;
 	box-shadow: 1px 1px 12px 1px white;
 	margin: 20px;
+
+	position: relative;
 }
-.producto:hover{
+/* .producto:hover{
 	transition: width 1s, height 1s, transform 1s;
 	transform: scale(1.05);
 	box-shadow: 1px 1px 12px 1px #0000003c;
@@ -96,21 +100,47 @@ main{
 	transition: width 1s, height 1s, transform 1s;
 	transform: scale(1);
 	box-shadow: 1px 1px 12px 1px white;
-}
+} */
 .figuraProducto img{
 	width: 200px;
 	height: 250px;
 	object-fit: cover;
+	
+
+}
+.figuraProducto{
+	opacity: 1;
+	display: block;
+	transition: .5s ease;
+	backface-visibility: hidden;
 }
 
 .botonComprar{
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transition: .5s ease;
+	opacity: 0;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%)
+}
+.producto:hover .figuraProducto{
+	opacity: 0.5;
+}
+.producto:hover .botonComprar{
+	opacity: 1;
+}
+.text{
 	background: #4caf505c;
-	color: #ffffff;
-	border: none;
+	color: #000000;
 	border-radius: 5px;
 	padding: 3px;
 	margin: 3px auto;
+	
 }
+
+
 
 .tituloProducto{
 	font-size: 13px;
@@ -131,8 +161,8 @@ main{
 	width: 150px;
 	position: absolute;
 	top: 200px;
-	left: 10px;
-	border: 1px solid #0000005c;
+	left: 70px;
+	background: #00000018;
 	border-radius: 15px;
 }
 .divCarrito{
@@ -193,10 +223,10 @@ main{
 
 footer{
 	display: flex;
-	width: 100%;
-	height: 40px;
-	background: linear-gradient(90deg, rgba(164,186,183,1) 0%, rgba(239, 242, 192,1) 29%, rgba(190, 165, 125,1) 100%);
 	align-items: center;
-	justify-content: center;
-
+	justify-content: right;
+	width: 100%;
+	/*background: linear-gradient(90deg, rgba(164,186,183,1) 0%, rgba(239, 242, 192,1) 29%, rgba(190, 165, 125,1) 100%);
+	*/padding: 0 30px;
+	height: 100%;
 }
