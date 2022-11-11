@@ -20,11 +20,12 @@ header{
 	display: flex;
 	width: 100%;
 	height: 40px;
-	background: linear-gradient(90deg, rgba(164,186,183,1) 0%, rgba(210, 215, 223,1) 29%, rgba(215, 208, 217,1) 100%);
+	background: linear-gradient(90deg, rgba(164,186,183,1.8) 0%, rgba(210, 215, 223,.8) 29%, rgba(215, 208, 217,.8) 100%);
 	align-items: center;
 	justify-content: center;
 	position: sticky;
 	top: 0;
+	z-index: 1;
 }
 a:hover{
 	transition: width 1s, height 1s, transform 1s;
@@ -237,4 +238,33 @@ footer div{
 	border-radius: 5px;
 	width: 100px;
 	display: block;
+}
+
+/*------------------------------------------------------------*/
+
+@media only screen and (max-width: 400px){
+	.header navbar a{
+		font-size: 20px;
+	}
+	main{
+		display: flex;
+		flex-direction: column;
+	}
+	.carrito{
+		position: static;
+		display: block;
+		width: 100%;
+		height: auto;
+		border-radius: 0;
+	}
+	.productos{
+		position: static;
+		width: 100%;
+		display: block;
+		margin: 0 auto 30px;
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 29%, rgba(249,249,249,1) 100%);
+	}
+	.producto{
+		margin: 20px auto;
+	}
 }
