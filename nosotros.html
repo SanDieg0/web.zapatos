@@ -1,50 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Nosotros - Schuh</title>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./assets/style.css">
+<html>
+	<head>
+		<!-- CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	</head>
 
-</head>
-<body>
-	<header class="header">
-		<navbar>
-			<a href="./index.html" class="menuNavbar navbarInicio">Inicio</a>
-			<a href="./productos.html" class="menuNavbar navbarProductos">Productos</a>
-			<a href="./nosotros.html" class="menuNavbar navbarNosotrosX">Nosotros</a>
-		</navbar>
-	</header>
-	<main>
-		<section class="cuerpo">
-			<figure class="figureNosotros">
-				<img src="https://www.crownhillshoes.com/img/cms/Tienda/crownhill-shoes-store-madrid.jpg">
-			</figure>
-			<h1>Schuh - Nosotros</h1>
-			<p>Somos una familia dedicada a la marroquinería desde el año 1998, hemos dedicado nuestro tiempo y esfuerzo al perfeccionamiento de la calidad en nuestros zapatos. </br> Agradecidos con el pueblo colombiano por la confianza puesta en nosotros.</p>
-			<section class="descripcionNosotros">
-				<div class="cajaNosotros mision">
-					<h2>Misión</h2>
-					<p>Satisfacer a nuestros clientes mediante la producción de zapatos de la mas alta calidad con técnicas locales aportando así al desarrollo económico nacional</p>
+	<body>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-12 bg-success text-center">
+					<header>
+						<button><a href="index.html">inicio</a></button>
+						<button><a href="nosotros.html">nosotros</a></button>
+						<button><a href="productos.html">productos</a></button>  
+						<button><a href="contactenos.html">contactenos</a></button> 
+					</header>
 				</div>
-				<div class="cajaNosotros vision">
-					<h2>Visión</h2>
-					<p>Construir la marca digital de zapatos número uno a nivel nacional gracias al reconocimiento en calidad de producto</p>
-				</div>
-				<div class="cajaNosotros valores">
-					<h2>Valores</h2>
-					<p>-Confiabilidad		-Ética</br>-Compromiso		-Responsabilidad</br>-Empatía		-Amistad</br>-Reconocimiento		-Apreciación</br></p>
-				</div>
-			</section>
-		</section>
-	</main>
-	<footer>
-		<div></div>
-		<a href="" class="menuNavbar navbarContactenos">Contáctenos</a>
-	</footer>
-</body>
+			</div><!-- fin primera fila -->
+
+			<div class="row">
+				<div class="col-12 bg-info">
+					<div class="container">
+					<main>
+						<div class="row">
+							<div class="col-4 bg-warning">
+								<section>
+									<h1>Mision</h1>
+									<p>Aqui va la mision de la empresa</p>
+
+									<!-- INICIO CARD -->
+
+<div class="card">
+  <img src="assets/img/one-piece.jpg" class="card-img-top" alt="luffy">
+  <div class="card-body">
+    <h5 class="card-title">Monkey D. Luffy</h5>
+    <p class="card-text">Capitan de los piratas sombrero de paja</p>
+    <a href="https://youtu.be/4iN8ZL8FVU4" class="btn btn-primary">Ir a Youtube</a>
+  </div>
+</div>
+									<!-- FIN CARD -->
+								</section>
+							</div><!-- fin primera columna-->
+
+							<div class="col-4 bg-primary text-light">
+								<article>
+									<h1>Vision</h1>
+									<p>Aqui va la vision de la empresa</p>
+									<!-- BOTON DEL MODAL -->
+
+									<!-- Button trigger modal -->
+										<button type="button" class="btn btn-warning text-primary" data-bs-toggle="modal" data-bs-target="#pepito">
+  													Lanzar Modal
+										</button>
+									<!- FIN BOTON MODAL -->
+
+<!-- INICIO MODAL -->
+<div class="modal fade text-primary" id="pepito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Anime</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         Aqui colocaré las series favoritas de anime: Saint Seiya, One Piece, Attack on Titan, Demon Slayer, My Hero Academia. <br>
+	<img src="assets/img/bakugo.png" class="img-fluid" alt="bakugo">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- FIN MODAL -->
+
+
+
+
+
+
+									<!-- BOTON DEL MODAL -->
+
+									<!-- Button trigger modal -->
+										<button type="button" class="btn btn-success text-light" data-bs-toggle="modal" data-bs-target="#fulanito">
+  													Lanzar otro Modal
+										</button>
+									<!- FIN BOTON MODAL -->
+
+
+<!-- INICIO MODAL -->
+<div class="modal fade text-primary" id="fulanito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">VideoJuegos</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         Aqui colocaré los juegos que me gustan: Last Of Us I y II <br>
+	<img src="assets/img/lastofus.jpg" class="img-fluid" alt="joel">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- FIN MODAL -->
+
+
+
+
+								</article>
+							</div><!-- fin segunda columna -->
+
+
+							<div class="col-4 bg-danger text-light">
+								<aside>
+									<h1>Valores</h1>
+									<p>Aqui van los valores de la empresa</p>
+
+
+									<!-- INICIO CARD -->
+
+<div class="card">
+  <img src="assets/img/eren.jpg" class="card-img-top" alt="eren">
+  <div class="card-body text-danger">
+    <h5 class="card-title">Eren Jaeger</h5>
+    <p class="card-text">Soldado de la legión de exploracion</p>
+    <a href="https://youtu.be/1WJae-_GfU0" class="btn btn-primary">Ir a Youtube</a>
+  </div>
+</div>
+									<!-- FIN CARD -->
+
+								</aside>
+							</div><!-- fin tercera columna -->
+						</div><!-- fin row -->
+					</main>
+					</div><!-- fin container -->
+				</div><!-- fin columna -->
+			</div><!-- fin segunda fila -->
+
+			<div class="row">
+				<div class="col-12 bg-dark text-light text-center">
+					<footer>
+						<small>telefono: 3773489</small>
+					</footer>
+				</div><!-- fin columna -->
+			</div><!-- fin tercera fila -->
+		</div><!-- fin container -->
+
+
+
+
+
+
+
+
+
+		<!-- JavaScript Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	</body>
 </html>
+
