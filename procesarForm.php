@@ -1,5 +1,5 @@
 <?php
 
-	header('Location: /confirmacion.html');
+	header('Location: https://sandieg0.github.io/web.zapatos/confirmacion.html');
 
 ?>
