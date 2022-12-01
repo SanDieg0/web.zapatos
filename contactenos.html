@@ -1,63 +1,39 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>contactenos</title>
-		<link rel="stylesheet" href="assets/css/mystyles.css">
-	</head>
+<html lang="en">
+<head>
+	<title>Productos - Schuh</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+	<header class="header">
+		<navbar>
+			<a href="./index.html" class="menuNavbar navbarInicioX">Inicio</a>
+			<a href="./productos.html" class="menuNavbar navbarProductos">Productos</a>
+			<a href="./nosotros.html" class="menuNavbar navbarNosotros">Nosotros</a>
+		</navbar>
+	</header>
+	<main>
+		<form class="loginSection" id="loginSection" name="formEjemplo" method="GET" action="procesarForm.php">
+			<label for="campoNombre">Nombre:</label>
+			<input type="text" id="campoNombre" name="campoNombre">
+			<label for="campoApellido">Apellido:</label>
+			<input type="text" id="campoApellido" name="campoNombre">
+			<input type="submit">
+			
+		</form>
+	</main>
+	<footer>
+		<div></div>
+		<a href="contactenos.html" class="menuNavbar navbarContactenos">Contáctenos</a>
+		<button id="tema" onclick="cambiarTema()">Cambiar tema</button>
+	</footer>
 
-	<body>
-	
-		<header style ="background-color:#87FC3F;" align="center">
-			<button><a href="index.html">inicio</a></button>
-			<button><a href="nosotros.html">nosotros</a></button>
-			<button><a href="productos.html">productos</a></button> 
-			<button><a href="contactenos.html">contactenos</a></button> 
-		</header>
-
-
-		<main>
-
-		     <div class="especial">
-			<form id="datosprueba" name="datosprueba">
-				<label for="nombre">Ingrese nombre:</label><br>
-				<input type="text" id="nombre" name="nombre" value="digite un nombre"><br>
-
-				<label for="apellido">Ingrese apellido:</label><br>
-				<input type="text" id="apellido" name="apellido">
-
-				<input type="button" value="Enviar al server"  onclick="validarForm()">
-
-				<p id="resultado"></p>
-			</form>
-		    </div>
-
-			<div>
-				<p>Un parrafo</p>
-				<p>Otro parrafo</p>
-			</div>
-
-			<div id="loco">
-				<h1> Un Heading </h1>
-				<h1> Otro Heading </h1>
-			</div>
-
-			<div class="especial">
-				<p> Ultimo parrafo </p>
-				<h5>Ultimo heading</h5>
-			</div>
-
-		</main>
-
-
-		<footer style="background-color:black; color:white;" align="center">
-			<small>telefono: 3773489</small>
-		</footer>
-
-
-
-		<script src="assets/js/myscripts.js"></script>
-	</body>
+	<script src="assets/index.js"></script>
+</body>
 </html>
-
-
-

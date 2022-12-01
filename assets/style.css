@@ -20,14 +20,14 @@ header{
 	display: flex;
 	width: 100%;
 	height: 40px;
-	background: linear-gradient(90deg, rgba(164,186,183,1.8) 0%, rgba(210, 215, 223,.8) 29%, rgba(215, 208, 217,.8) 100%);
+	background: linear-gradient(90deg, rgba(164,186,183,.8) 0%, rgba(210, 215, 223,.8) 29%, rgba(215, 208, 217,.8) 100%);
 	align-items: center;
 	justify-content: center;
 	position: sticky;
 	top: 0;
 	z-index: 1;
 }
-a:hover{
+/* a:hover{
 	transition: width 1s, height 1s, transform 1s;
 	transform: scale(1.1);
 	font-weight: 500;
@@ -35,7 +35,7 @@ a:hover{
 a:not(:hover){
 	transition: width 1s, height 1s, transform 1s;
 	transform: scale(1);
-}
+}*/
 .menuNavbar{
 	color: #0000019c;
 	text-decoration: none;
@@ -63,7 +63,20 @@ main{
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
+	padding: 50px 0;
 }
+
+					/*  ESTA PARTE ES DE INDEX    */
+
+.loginSection{
+	width: 200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
 
 	
 					/*  ESTA PARTE ES DE PRODUCTOS    */
@@ -77,7 +90,7 @@ main{
 	grid-gap: 20px;
 	justify-content: center;
 
-	margin: 50px auto 50px 180px;
+	margin: 0 auto 0 180px;
 }
 .producto{
 	width: 250px;
@@ -126,12 +139,20 @@ main{
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%)
 }
-.producto:hover .figuraProducto{
+
+
+
+/* .producto:hover .figuraProducto{
 	opacity: 0.5;
 }
 .producto:hover .botonComprar{
 	opacity: 1;
-}
+} */
+
+
+
+
+
 .text{
 	background: #4caf505c;
 	color: #000000;
@@ -231,7 +252,6 @@ footer{
 	/*background: linear-gradient(90deg, rgba(164,186,183,1) 0%, rgba(239, 242, 192,1) 29%, rgba(190, 165, 125,1) 100%);
 	*/padding: 0 30px;
 	height: 100%;
-	margin-top: 10px;
 }
 footer div{
 	border: 2px solid #0000019c;
